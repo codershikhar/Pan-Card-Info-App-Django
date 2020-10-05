@@ -14,7 +14,7 @@ SECRET_KEY = '!$df7=&9d)2s%_(v=1!1^cq9$2=c9_9ssh11x)xv&mm^dq&c^t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
