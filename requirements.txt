@@ -1,0 +1,7 @@
+django
+djangorestframework
+psycopg2
+psycopg2-binary
+Pillow
+pytesseract
+opencv-python
