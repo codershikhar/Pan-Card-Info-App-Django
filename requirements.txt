@@ -3,5 +3,6 @@ djangorestframework
 psycopg2
 psycopg2-binary
 Pillow
+pandas
 pytesseract
 opencv-python
