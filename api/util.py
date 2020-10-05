@@ -152,7 +152,7 @@ def extract_signature(imagePath, signature_positions):
 
 
 def extract_data(img_file):
-    if 'linux' in str(platform.platform()):
+    if 'linux' in str(platform.platform()).lower():
         img_file = os.getcwd() + img_file
     else:
         img_file = os.getcwd() + img_file.replace('/', '\\')
