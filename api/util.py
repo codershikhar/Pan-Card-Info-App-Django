@@ -9,6 +9,7 @@ import os
 import time
 import re
 import datetime
+import platform
 
 
 def process_image_data(data):
@@ -151,7 +152,10 @@ def extract_signature(imagePath, signature_positions):
 
 
 def extract_data(img_file):
-    img_file = os.getcwd() + img_file.replace('/', '\\')
+    if 'linux' in str(platform.platform()):
+        img_file = os.getcwd() + img_file
+    else:
+        img_file = os.getcwd() + img_file.replace('/', '\\')
     print('img_file', img_file)
     pan_info = PanInfo()
     # Get Json Text Data
